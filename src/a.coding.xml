@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<variables>
+		<variable name="developer" value="WangPeng" />
+		<variable name="company" value="航天软件评测中心" />
+		<variable name="charset" value="utf-8" />		
+		<variable name="class" value="CodeGen" />
+		<variable name="name" value="姓名" />
+		<variable name="age" value="年龄" />
+	</variables>
+	
+	<templates>
+		<template>			
+			<variable name="templatepath" value="E:\CodeGenTest\template" />
+			<variable name="templatename" value="a.ftl" />
+			<variable name="targetpath" value="E:\CodeGenTest" />		
+			<variable name="targetname" value="CodeGen.java" />
+		</template>
+		<template>			
+			<variable name="templatepath" value="E:\CodeGenTest\template" />
+			<variable name="templatename" value="b.ftl" />
+			<variable name="targetpath" value="E:\CodeGenTest" />		
+			<variable name="targetname" value="CodeGen2.java" />
+		</template>
+	</templates>
+</config>

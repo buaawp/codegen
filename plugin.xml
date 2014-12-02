@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="CodegenPlugin.contribution1"
+            nameFilter="*.coding.xml"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               label="代码生成器"
+               path="additions"
+               id="CodegenPlugin.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="生成代码"
+               class="codegenplugin.popup.actions.CodegenAction"
+               menubarPath="CodegenPlugin.menu1/group1"
+               enablesFor="+"
+               id="CodegenPlugin.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
